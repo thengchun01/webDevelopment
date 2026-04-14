@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4a</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body class="bgB80">
+    <div class="g3c w1 h1 pd gap jc acc" id="mainContainer">
+
+        <div class="box bgW80 w300 bround fcolumn jc ac pd" id="lab4.1">
+            <p id="4.1">Welcome to my website</p>
+            <div class="button" id="b4.1"> Click Me </div>
+        </div>
+
+        <div class="box bgW80 w300 bround fcolumn pd gap" id="lab4.2">
+            <div>
+                <p id="4.2">Check Input</p>
+                <div class="input frow">
+                    <label for="i4.2">Number: </label>
+                    <input type="text" id="i4.2">
+                </div>
+            </div>
+            <div>
+                <div id="r4.2">Waiting for checking</div>
+                <button class="button" id="b4.2" onclick="checkInput()">Click</button>
+            </div>
+        </div>
+
+        <div class="box bgW80 w300 bround fcolumn pd" id="lab4.3">
+            <p id="demo"></p>
+   
+            <script>
+                let text = "";
+                
+                for (let i = 0; i < 5; i++) {
+                text += "The number is " //complete your answer here
+                text += `${i+1} <br>`
+                }
+                
+                document.getElementById("demo").innerHTML = text;
+            </script>
+        </div>
+        <div class="box bgW80 w300 bround fcolumn" id="lab4.4">
+            <div></div>
+        </div>    
+        <div class="box bgW80 w300 bround fcolumn" id="lab4.5">
+            <div></div>
+        </div>    
+    
+    </div>
+</body>
+</html>
